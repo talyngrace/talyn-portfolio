@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,54 +11,61 @@
 
 <header>
     <h1>Talyn</h1>
-<nav>
-    <ul class="navlinks">
-        <li><a href = "#aboutme">About Me</a></li>
-        <li><a href = "#work">Work</a></li>
-        <li><a href = "#contact">Contact Me</a></li>
-        <li><a href = "#resume">Resume</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul class="navlinks">
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
 
 </header>
 
-<div class ="header2"><p>header 2</p></div>
+<div class="header2">
+    <p>header 2</p>
+</div>
 
 <body>
 
-    <aside>
-    <h1 class="sidebar"></h1>About Me</h1>
-    </aside>
-
+    <div class="wrapper">
     <section>
-    <p>Hi my name is Talyn, I am currently a student at UPenn studying computer programming</p>
-     </section>
-
-     <aside>
-    <h1 class="sidebar">Work</h1>
-    </aside>
-
-    <section>
-    <ul class="body">
-        <li><a href = "#">1</a></li>
-        <li><a href = "#">2</a></li>
-        <li><a href = "#">3</a></li>
-        <li><a href = "#">4</a></li>
-    </ul>
+        <aside>
+        <h1>About Me</h1>
+        </aside>
+        <p>Hi my name is Talyn, I am currently a student at UPenn studying computer programming</p>
     </section>
 
-    <aside>
-    <h1 class="sidebar">Contact Me</h1>
-    </aside>
 
     <section>
-    <ul class ="footer">
-        <li><a id="aboutme" href = "#aboutme">About Me</a></li>
-        <li><a id="work" href = "#work">Work</a></li>
-        <li><a id="contact" href = "#contact">Contact Me</a></li>
-        <li><a id="resume" href = "#resume">Resume</a></li>
-    </ul>
+        <aside>
+            <h1>Work</h1>
+        </aside>
+        <container class = "stacked">
+            <ul class="body">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>  
+        </container>
     </section>
-    
+
+    <section>
+        <aside>
+            <h1>Contact Me</h1>
+        </aside>
+        <ul class="footer">
+            <li><a id="aboutme" href="#aboutme">About Me</a></li>
+            <li><a id="work" href="#work">Work</a></li>
+            <li><a id="contact" href="#contact">Contact Me</a></li>
+            <li><a id="resume" href="#resume">Resume</a></li>
+        </ul>
+    </section>
+
+</div>
+
 </body>
+
 </html>

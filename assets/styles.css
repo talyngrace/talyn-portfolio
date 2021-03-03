@@ -3,7 +3,10 @@
     padding: 0;
     margin: 0;
 }
-
+:root {
+--dark: rgb(73, 73, 73);
+--light: rgb(115, 188, 206);
+}
 header {
     background-color:rgb(73, 73, 73);
     color: rgb(73, 73, 73);
@@ -16,8 +19,8 @@ header {
 header h1 {
     display: flex;
     justify-content:flex-end;
-    border: 2px solid rgb(115, 188, 206);
-    background-color:rgb(115, 188, 206);
+    border: 2px solid var(--light);
+    background-color:var(--light);
     padding: 5px 40px;
 }
 
@@ -36,12 +39,12 @@ header h1 {
     transition: all 0.3s ease 0s;
     text-decoration: none;
     padding: 5x 10px;
-    border-bottom: solid rgb(115, 188, 206);
-    color:rgb(115, 188, 206);
+    border-bottom: solid var(--light);
+    color:var(--light);
 }
 
 .navlinks li a:hover {
-    color: rgb(157, 213, 235);
+    color: rgb(0, 157, 219);
 }
 
 .header2 {
@@ -53,9 +56,11 @@ body {
     background-color: rgb(226, 226, 226);
 }
 
+/**
 nav img {
 
 }
+
 
 .sidebar {
     display: flex;
@@ -94,4 +99,73 @@ body p {
     background-color: rgb(255, 255, 255);
 }
 
+*/
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+section, aside {
+    display: inline-block;
+    padding: 30px;
+}
+
+aside {
+    width: 25%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--light);
+    font-size: 45px;
+    text-align: right;
+    border-right: solid var(--light);
+}
+
+section {
+    width: 100%;
+    display: flex;
+}
+
+section ul li {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer li {
+    display: flex;
+    flex-direction:row;
+}
+
+.footer li a {
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.body li a {
+    padding: 10px;
+    border: 2px black solid;
+}
+
+
+@media screen and (min-width: 768px) {
+   
+    }
+  
+
+  @media screen and (min-width: 992px) {
+    
+    }
+  
