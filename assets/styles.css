@@ -7,10 +7,15 @@
 --dark: rgb(73, 73, 73);
 --light: rgb(140, 161, 167);
 }
+
+p {
+    padding: 10px;
+}
+
 header {
     background-color:rgb(73, 73, 73);
     color: rgb(73, 73, 73);
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +57,7 @@ html {
 }
 
 .header2 {
-    padding: 70px;
+    padding: 90px;
     display: flex;
     align-items: right;
     background: linear-gradient(var(--dark), var(--light));
@@ -66,6 +71,7 @@ html {
 
 body {
     background-color: rgb(226, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -150,24 +156,28 @@ section ul li {
 
 
 .body li img {
-    height: 110px;
-    width: 180px;
+    height: 180px;
+    width: 320px;
+    border-radius: 50px;
 }
 
 .body li img:hover {
- height: 105px;
- width: 175px;
+ height: 175px;
+ width: 315px;
+ box-shadow: 10px 10px 5px #0005;
+ 
 }
 
 
- .stacked, .stacked .body {
+ .container, .stacked .body {
     display: flex;
     flex-direction: row;
     flex-flow:wrap;
+    flex: 1 0 auto;
     justify-content: space-between ;
 }
 
- .stacked .body {
+.body {
     width: 100%;
     margin-bottom: 10px;
     flex: 1 1 0%;
@@ -177,7 +187,7 @@ section ul li {
 
 
 @media screen and (max-width: 992px) {
-    header {
+     {
       
     }
   }
