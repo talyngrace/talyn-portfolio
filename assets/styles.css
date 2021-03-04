@@ -5,7 +5,7 @@
 }
 :root {
 --dark: rgb(73, 73, 73);
---light: rgb(115, 188, 206);
+--light: rgb(140, 161, 167);
 }
 header {
     background-color:rgb(73, 73, 73);
@@ -43,90 +43,66 @@ header h1 {
     color:var(--light);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .navlinks li a:hover {
     color: rgb(0, 157, 219);
 }
 
 .header2 {
     padding: 70px;
-    background-color: rgb(115, 188, 206);
+    display: flex;
+    align-items: right;
+    background: linear-gradient(var(--dark), var(--light));
 }
+
+.header2 h1 {
+    color: var(--dark);
+    padding: 5px;
+}
+
 
 body {
     background-color: rgb(226, 226, 226);
 }
 
-/**
-nav img {
-
-}
-
-
-.sidebar {
-    display: flex;
-    justify-content:flex-end;
-    padding: 50px;
-    max-width: 40%;
-    color: rgb(59, 91, 117);
-    text-align: right;
-    border-right: 2px solid rgb(59, 91, 117);
-}
-
-.body li a {
-    float: right;
-}
-
-.footer li {
-    display: inline-block;
-    align-items: center;
-    padding: 40px 20px;
-    list-style: none;
-}
-
-.footer li a {
-    text-align: center;
-    padding: 30px;
-    margin: auto;
-    list-style: none;
-
-}
-
-body p {
-    float: right;
-    text-align: right;
-    padding: 20px;
-    width: 50%;
-    background-color: rgb(255, 255, 255);
-}
-
-*/
-
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
 }
+
 
 section, aside {
     display: inline-block;
     padding: 30px;
+    margin-right: 10%;
+    min-width: 33%;
 }
 
 aside {
     width: 25%;
-    float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position:relative;
+}
+
+aside h1 {
+    padding-right: 10px;
+    border-right: solid var(--light);
+    text-align: right;
     color: var(--light);
     font-size: 45px;
-    text-align: right;
-    border-right: solid var(--light);
 }
 
 section {
     width: 100%;
     display: flex;
+    flex-direction: row;
 }
 
 section ul li {
@@ -136,36 +112,89 @@ section ul li {
     flex-direction: column;
 }
 
-.footer li {
+
+.footer li a {
+    padding: 5px;
+    list-style: none;
+    text-align:right;
+}
+
+.footer {
+    list-style: none;
+}
+
+.footer ul {
     display: flex;
-    flex-direction:row;
+    justify-content: space-evenly;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.footer li {
+    flex-direction: row;
+    display: inline-block;
+    margin-top: 50px;
 }
 
 .footer li a {
-    text-align: center;
-    padding: 10px;
-    list-style: none;
-    display: inline-block;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    padding: 5x 10px;
+    border-bottom: solid var(--light);
+    color:var(--light);
 }
 
-.container {
+.footer li a:hover {
+    color: rgb(126, 172, 190);
+}
+
+
+.body li img {
+    height: 110px;
+    width: 180px;
+}
+
+.body li img:hover {
+ height: 105px;
+ width: 175px;
+}
+
+
+ .stacked, .stacked .body {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-flow:wrap;
+    justify-content: space-between ;
 }
 
-.body li a {
-    padding: 10px;
-    border: 2px black solid;
-}
+ .stacked .body {
+    width: 100%;
+    margin-bottom: 10px;
+    flex: 1 1 0%;
+}  
 
 
-@media screen and (min-width: 768px) {
-   
+
+
+@media screen and (max-width: 992px) {
+    header {
+      
     }
+  }
   
-
-  @media screen and (min-width: 992px) {
-    
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      
     }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .body {
+     
+    }
+  }
+  
+  */
   
