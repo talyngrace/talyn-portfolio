@@ -66,6 +66,8 @@ html {
 .header2 h1 {
     color: var(--dark);
     padding: 5px;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 
@@ -81,21 +83,37 @@ body {
     width: 100%;
 }
 
-
-section, aside {
-    display: inline-block;
-    padding: 30px;
-    margin-right: 10%;
-    min-width: 33%;
-}
-
-aside {
-    width: 25%;
+section {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    position:relative;
+    justify-content: space-between;
+    width: 100%;
 }
+
+section, aside {
+    padding: 25px;
+    margin-left: auto;
+    width: 25%;
+}
+
+section .floatright {
+    padding: 20px;
+    width: 75%;
+}
+
+/* section, aside {
+    display: inline-block;
+    padding: 46px 156px 50px 57px;
+    margin-right: 1%;
+    min-width: 33%;
+} */
+
+/* aside {
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    position:relative;
+} */
 
 aside h1 {
     padding-right: 10px;
@@ -168,20 +186,37 @@ section ul li {
  
 }
 
+section .body {
+    display: flex; 
+    flex-direction: column;  
+    justify-content: space-between;                      
 
- .container, .stacked .body {
+}
+
+.row1 li img{
+    align-items: center;
+}
+
+.row2 li img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} 
+
+
+ /* .container, .stacked .body {
     display: flex;
     flex-direction: row;
     flex-flow:wrap;
     flex: 1 0 auto;
     justify-content: space-between ;
-}
+} */
 
-.body {
+/* .body {
     width: 100%;
     margin-bottom: 10px;
     flex: 1 1 0%;
-}  
+}   */
 
 
 
@@ -194,10 +229,19 @@ section ul li {
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
-    nav {
-      
+    section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px var(--dark);
     }
-  }
+section h1 {
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px var(--dark);
+}
+}
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
