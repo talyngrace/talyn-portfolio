@@ -10,8 +10,9 @@ This page uses HTML and a CSS page.
 The site consists of a header with a navigation bar that when the links are pressed, scrolls to the correct place on the page. In the main body there is an "About Me" section that has a breif bio, a Work section that showcases 5 large boxes that lead to the work I will create, and finally a contact section with my contact info.
 
     
-[alt text](assets/screenshot1.png)
-[alt text](assets/screenshot2.png)
+[Screenshot 1](assets/screenshot1.png)
+[Screenshot 2](assets/screenshot2.png)
+[Github](https://github.com/talyngrace/talyn-portfolio)
     
 
 ## Features
