@@ -4,8 +4,8 @@
     margin: 0;
 }
 :root {
---dark: rgb(73, 73, 73);
---light: rgb(140, 161, 167);
+--dark: rgb(51, 51, 51);
+--light: rgb(152, 167, 170);
 }
 
 p {
@@ -13,8 +13,8 @@ p {
 }
 
 header {
-    background-color:rgb(73, 73, 73);
-    color: rgb(73, 73, 73);
+    background-color: var(--dark);
+    color: var(--dark);
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,7 @@ header h1 {
     border: 2px solid var(--light);
     background-color:var(--light);
     padding: 5px 40px;
+    border-radius: 50px;
 }
 
 .navlinks {
@@ -57,18 +58,24 @@ html {
 }
 
 .header2 {
-    padding: 90px;
+    padding: 60px;
+    margin-bottom: 30px;
     display: flex;
     align-items: right;
     background: linear-gradient(var(--dark), var(--light));
 }
 
-.header2 h1 {
+/* .header2 h1 {
     color: var(--dark);
     padding: 5px;
-    margin-left: auto;
-    margin-right: 10px;
-}
+    border: 2px solid var(--light);
+    background-color:var(--light);
+    padding: 5px 40px;
+    border-radius: 50px;
+    /* margin-left: auto;
+    margin-right: 10px; */
+    justify-content: flex-end;
+} */
 
 
 body {
@@ -90,15 +97,16 @@ section {
     width: 100%;
 }
 
-section, aside {
-    padding: 25px;
+section aside {
+    padding: 33px;
     margin-left: auto;
-    width: 25%;
+    margin-top: 25px;
+     width: 25%;
 }
 
 section .floatright {
-    padding: 20px;
-    width: 75%;
+    padding: 33px;
+     width: 75%;
 }
 
 /* section, aside {
@@ -157,7 +165,7 @@ section ul li {
 .footer li {
     flex-direction: row;
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .footer li a {
@@ -203,22 +211,46 @@ section .body {
     flex-wrap: wrap;
 } 
 
+.img {
+    background: linear-gradient(var(--dark), var(--light));
+    border-radius: 50px;
+    
+}
 
- /* .container, .stacked .body {
+.body {
     display: flex;
-    flex-direction: row;
-    flex-flow:wrap;
-    flex: 1 0 auto;
-    justify-content: space-between ;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-height: 200px;
+    max-height: 200px;
+    padding: 30px;
+    margin: 20px;
+    background-size: 100%;
+    display: flex;
+    flex-basis: calc(50% - 1em);
+    color: var(--dark);
+    text-decoration: none;
+    align-items: flex-end;
+
+}
+
+.card:hover {
+    box-shadow: 10px 10px 10px var(--dark);
+    transition: all 0.3s ease 0s;
+}
+
+.card:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+}
+
+
+/* .card div {
+    background-color: var(--light);
 } */
-
-/* .body {
-    width: 100%;
-    margin-bottom: 10px;
-    flex: 1 1 0%;
-}   */
-
-
 
 
 @media screen and (max-width: 992px) {
@@ -228,27 +260,30 @@ section .body {
   }
   
   /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     section {
-      flex-direction: column;
+     flex-direction: column;
       justify-content: center;
       align-items: center;
-      border-bottom: 1px var(--dark);
-    }
-section h1 {
+      /* border-bottom: 1px var(--dark); */
+    } 
+
+aside h1 {
     align-items: center;
     text-align: center;
     padding: 30px;
-    border-bottom: 1px var(--dark);
+    border-bottom: 3px solid var(--light);
+    border-right: none;
 }
+
+section .floatright {
+    width: 100%;
 }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .body {
-     
-    }
-  }
-  
-  */
+
+section aside {
+    width: 100%;
+}
+
+}
+ 
   
